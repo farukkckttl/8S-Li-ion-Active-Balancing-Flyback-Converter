@@ -1,6 +1,6 @@
-# 8S Li-ion Battery Active Balancing System Based on Flyback Converter
+# 8S Li-ion Active Balancing System Based on Flyback Converter
 
-This repository contains our undergraduate graduation thesis on the design of a flyback converter based bidirectional active balancing system for 8-cell Li-ion battery packs.
+This repository contains our undergraduate graduation thesis on the design of a **flyback converter based bidirectional active balancing system** for **8-cell Li-ion battery packs**.
 
 ## Project Title
 
@@ -30,10 +30,10 @@ In this graduation project, a flyback converter based bidirectional active balan
 
 The main purpose of the project is to reduce voltage imbalance between cells in multi-cell Li-ion battery packs. Instead of dissipating excess energy as heat, the proposed active balancing structure aims to transfer energy between the selected cell and the battery pack.
 
-The system is designed to support two operating modes:
+The system supports two main operating modes:
 
-- **Cell-to-Pack (CTP):** Energy transfer from a high-voltage cell to the battery pack  
-- **Pack-to-Cell (PTC):** Energy transfer from the battery pack to a low-voltage cell  
+- **Cell-to-Pack (CTP):** Energy transfer from a high-voltage cell to the battery pack
+- **Pack-to-Cell (PTC):** Energy transfer from the battery pack to a low-voltage cell
 
 ## Main Project Topics
 
@@ -43,23 +43,34 @@ The system is designed to support two operating modes:
 - Bidirectional energy transfer
 - MOSFET-based cell selection matrix
 - STM32-based control approach
-- MATLAB/Simulink simulations
+- MATLAB/Simulink simulation studies
 - 4-layer PCB design
+- Current and voltage sensing approach
+- Gate driver and snubber circuit design
 
-## Hardware and Design
+## Hardware Design
 
-The project includes the design of a 4-layer PCB for the active balancing system. The hardware structure includes:
+The hardware design includes a 4-layer PCB structure developed for the active balancing system. The main hardware blocks are:
 
 - Flyback converter power stage
-- MOSFET switching matrix
-- Current and voltage sensing points
+- MOSFET-based cell selection matrix
 - Gate driver circuits
 - Snubber and protection structures
+- Current and voltage sensing points
 - STM32 Nucleo based control interface
+- 8S Li-ion battery pack connection structure
 
 ## Simulation
 
 The system was modeled and analyzed in MATLAB/Simulink. Both Cell-to-Pack and Pack-to-Cell operating modes were evaluated using current and voltage waveforms.
+
+The simulation studies were used to observe:
+
+- Primary and secondary current behavior
+- Bidirectional energy transfer
+- Cell balancing current
+- MOSFET switching behavior
+- Discontinuous Conduction Mode (DCM) operation
 
 ## Thesis Document
 
@@ -69,8 +80,48 @@ The full thesis document can be accessed from the repository files.
 
 ## Project Images
 
-Project photos, PCB layout images and 3D PCB render views are included in this repository.
+### Project Presentation Photo
+
+![Project Presentation Photo](./Images/project-presentation-photo.jpg)
+
+### Assembled PCB and STM32 Test Setup
+
+![Assembled PCB and STM32 Test Setup](./Images/assembled-pcb-stm32-test-setup.jpg)
+
+### Fabricated PCB Front View
+
+![Fabricated PCB Front View](./Images/fabricated-pcb-front.jpg)
+
+### System Schematic
+
+![System Schematic](./Images/system-schematic.jpg)
+
+### 2D PCB Top View
+
+![2D PCB Top View](./Images/pcb-2d-top-view.jpg)
+
+### 3D PCB Isometric Render
+
+![3D PCB Isometric Render](./Images/pcb-3d-isometric-render.jpg)
+
+### 3D PCB Isometric Render - Alternative View
+
+![3D PCB Isometric Render Alternative View](./Images/pcb-3d-isometric-render1.jpg)
+
+### 3D PCB Top View
+
+![3D PCB Top View](./Images/pcb-3d-top-view.jpg)
 
 ## Keywords
 
-Battery Management System, BMS, Active Balancing, Flyback Converter, Power Electronics, Embedded Systems, STM32, PCB Design, MATLAB, Simulink
+Battery Management System, BMS, Active Balancing, Flyback Converter, Bidirectional Energy Transfer, Power Electronics, Embedded Systems, STM32, PCB Design, MATLAB, Simulink
+
+## Notes
+
+This project was completed as an undergraduate graduation thesis at Bursa Technical University, Department of Electrical and Electronics Engineering.
+
+The physical verification of the flyback transformer and full power-stage experimental tests were planned as future work. Therefore, the system behavior was mainly evaluated through theoretical calculations, PCB design, and MATLAB/Simulink simulation results.
+
+## License
+
+This repository is shared for educational and academic purposes.
