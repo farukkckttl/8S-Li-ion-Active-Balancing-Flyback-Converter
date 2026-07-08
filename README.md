@@ -65,7 +65,7 @@ The system was modeled and analyzed in MATLAB/Simulink. Both Cell-to-Pack and Pa
 
 The full thesis document can be accessed from the repository files.
 
-[View Thesis PDF](./Thesis.pdf)
+[View Thesis PDF](./8S-Liion-Active-Balancing-Flyback-Converter-Thesis.pdf)
 
 ## Project Images
 
